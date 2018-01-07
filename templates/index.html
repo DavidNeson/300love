@@ -11,6 +11,27 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script language="JavaScript">
+		var password="";
+		password=prompt('Would you like to have dinner with me tonight? (Y or N)','');
+		if (password != 'Y') {
+			alert("You should input Y!!");    
+			window.opener=null; 
+			window.open("about:blank","_self").close();
+		}  
+		else {
+			d = Date()
+			if (d.slice(4,10) != 'Jan 07') {
+				alert("Today is not our 300 days, HAHAHA");
+				window.opener=null; 
+				window.open("about:blank","_self").close();
+			}
+			else {
+				alert("Now put on your headphones!")
+				alert("I will pick you up after work!");
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -62,14 +83,16 @@
 			<article id="work" class="panel">
 				<header>
 					<font face="Centaur" size="16">
-						<strong>&nbsp&nbsp Violet</strong>
+						<strong>Violet</strong>
 					</font>
 
 					<font face="Centaur">&nbsp&nbsp Eternal Love</font>
 				</header>
 
 				<section>
-
+					<p>
+						<font face="Centaur">I love you, always have, always will.</font>
+					</p>
 					<div class="row">
 						<div>
 							<a href="#" class="image fit">
@@ -79,14 +102,14 @@
 					</div>
 				</section>
 			</article>
-
-
 		</div>
 
 		<!-- Footer -->
 		<div id="footer">
 			<ul class="copyright">
 				<li>Design: David, love you forever</li>
+				<br>
+				<audio src="music/secretbase.mp3" autoplay="autoplay" controls="controls"></audio>
 			</ul>
 		</div>
 
