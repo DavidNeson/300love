@@ -14,7 +14,7 @@
 	<script language="JavaScript">
 		var password="";
 		password=prompt('Would you like to have dinner with me tonight? (Y or N)','');
-		if (password != 'Y') {
+		if (password.toLowerCase() != 'y') {
 			alert("You should input Y!!");    
 			window.opener=null; 
 			window.open("about:blank","_self").close();
