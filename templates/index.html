@@ -13,29 +13,17 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<script language="JavaScript">
 		var password="";
-		password=prompt('Would you like to have dinner with me tonight? (Y or N)','');
-		if (password.toLowerCase() != 'y') {
-			alert("You should input Y!!");    
+		password=prompt('Password Required','');
+		if (password.toLowerCase() != 'dwlovehmj') {
+			alert("Incorrect!!");    
 			window.opener=null; 
 			window.open("about:blank","_self").close();
 		}  
-		else {
-			d = Date()
-			if (d.slice(4,10) != 'Jan 07') {
-				alert("Today is not our 300 days, HAHAHA");
-				window.opener=null; 
-				window.open("about:blank","_self").close();
-			}
-			else {
-				alert("Now put on your headphones!")
-				alert("I will pick you up after work!");
-			}
-		}
+
 	</script>
 </head>
 
 <body>
-
 	<!-- Wrapper-->
 	<div id="wrapper">
 
